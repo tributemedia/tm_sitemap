@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the TM Sitemap feature.
+ */
+
+include_once 'tm_sitemap.features.inc';
+
+/**
+ * Implements hook_theme().
+ */
+function tm_sitemap_theme() {
+  return array(
+    'views_data_export_xml_header__site_map' => array(
+      'variables' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+      'template' => 'views-data-export-xml-header--site-map',
+      'base hook' => 'views_data_export_xml_header',
+      'path' => drupal_get_path('module', 'tm_sitemap')."/templates",
+    ),
+    'views_view_field__site_map__path' => array(
+      'variables' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+      'template' => 'views-view-field--site-map--path',
+      'base hook' => 'views_view_field',
+      'path' => drupal_get_path('module', 'tm_sitemap')."/templates",
+    ),
+  );
+}

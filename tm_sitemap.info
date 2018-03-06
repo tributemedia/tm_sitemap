@@ -1,0 +1,11 @@
+name = TM Sitemap
+description = Provides a view that generates a sitemap.
+core = 7.x
+package = Features
+version = 7.x-1.0-alpha
+dependencies[] = views
+dependencies[] = views_data_export
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = site_map
+features_exclude[dependencies][ctools] = ctools
