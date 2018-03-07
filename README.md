@@ -6,7 +6,9 @@ This feature generates a view that provides a sitemap for a Drupal 7 site. After
 
 ## Installation
 
-To install, simply upload this feature to your modules folder. Make sure you have the [Views Data Export](https://www.drupal.org/project/views_data_export) module, as it is a dependency for this feature.
+**IMPORTANT** - Before installing, make sure you disable and uninstall any previously used XML Sitemap modules.
+
+To install, simply upload and enable this feature to your modules folder. Make sure you have the [Views Data Export](https://www.drupal.org/project/views_data_export) module, as it is a dependency for this feature.
 
 ## FAQ
 
